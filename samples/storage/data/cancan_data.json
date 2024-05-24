@@ -1,0 +1,63 @@
+{
+    "meta": {
+        "doid": "dwn10lbnz13cb8ec78XXX",
+        "committed": 1687272648,
+        "category": 9,
+        "parentname": "Series Name",
+        "name": "Asset Title",
+        "labels": [
+            "tv",
+            "drama"
+        ]
+    },
+    "data": [
+        [
+            5,
+            10,
+            "https://www.worldwildlife.org/",
+            "this is for you",
+            "https://media.giphy.com/media/X5kGTXuWsVwqxiTCuI/giphy-downsized-large.gif",
+            50
+        ],
+        [
+            8,
+            15,
+            "https://www.worldwildlife.org/",
+            "following",
+            "https://media.giphy.com/media/yNbzQkYolmwk8/giphy.gif",
+            1
+        ],
+        [
+            10,
+            40,
+            "https://www.worldwildlife.org/",
+            "product name",
+            "https://media.giphy.com/media/ESNF24bQCAMw0/giphy.gif",
+            1
+        ],
+        [
+            25,
+            37,
+            "https://www.worldwildlife.org/",
+            "affiliate link or some other programs",
+            "https://media.giphy.com/media/1oC5wdBZIlqdW/giphy.gif",
+            1
+        ],
+        [
+            40,
+            50,
+            "https://www.worldwildlife.org/",
+            "can be easily customized and built upon",
+            "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2tpYzRldW43aDE0OGJiMWl3bGx0OG13bHZ3MWNqbXJicHhmYnV0NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dCDqmgo15gNJYOhYCa/giphy.gif",
+            1
+        ],
+        [
+            52,
+            67,
+            "https://www.worldwildlife.org/",
+            "product based on what's in the current scene",
+            "https://media.giphy.com/media/ESNF24bQCAMw0/giphy.gif",
+            50
+        ]
+    ]
+}
