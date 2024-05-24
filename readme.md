@@ -1,6 +1,7 @@
 # CanCan
 
-** samples/scripts/videoSync.js **
+**samples/scripts/videoSync.js**
+
 A minimal CanCan data (CANDY) loader to render/sync data on the client side. Data preprocessing required. Formatting is optimized. Simply replace parameters and it's good to go.
 
 
