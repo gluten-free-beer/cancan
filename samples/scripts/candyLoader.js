@@ -63,7 +63,7 @@
               }
             };
             $('#cc_breakdown').hide();
-            $('#cc_details_content').empty();
+        
             // for meta information (optional)
             $('#target_video_overlay').removeClass('offscreen-right');
             setTimeout(() => {
@@ -79,7 +79,7 @@
             targetVideo.addEventListener('ended', function () {
               targetVideo.removeEventListener('timeupdate', playevent);
               setTimeout(() => {
-                $('#cc_details_content').empty();
+          
                 $('#cc_breakdown').hide();
               }, 1000);
             });
