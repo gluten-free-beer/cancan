@@ -2,7 +2,7 @@
   const { videoId, dataStorageSrc, minDuration, maxDuration } = params;
   const targetVideo = document.getElementById(videoId);
 
-  targetVideo.addEventListener('play', function () {
+  targetVideo.addEventListener('canplay', function () {
     fetch(dataStorageSrc)
       .then((r) => {
         if (r.ok) {
