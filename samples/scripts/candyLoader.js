@@ -1,8 +1,9 @@
 (function ($, params) {
-  const { videoId, dataStorageSrc, minDuration, maxDuration } = params;
-  const targetVideo = document.getElementById(videoId);
+  const { doid, dataStorageSrc, minDuration, maxDuration } = params;
+  const videoId = `doid_${doid}_video`;
+  const targetAsset = document.getElementById(videoId);
 
-  targetVideo.addEventListener('canplay', function () {
+  targetAsset.addEventListener('canplay', function () {
     fetch(dataStorageSrc)
       .then((r) => {
         if (r.ok) {
@@ -72,12 +73,12 @@
             // optional
             $('#cc_header').html(`${doid}: ${name} CANDY`);
             // or attach event to the video element to make it simpler
-            targetVideo.addEventListener('timeupdate', playevent);
-            targetVideo.addEventListener('pause', function () {
-              targetVideo.removeEventListener('timeupdate', playevent);
+            targetAsset.addEventListener('timeupdate', playevent);
+            targetAsset.addEventListener('pause', function () {
+              targetAsset.removeEventListener('timeupdate', playevent);
             });
-            targetVideo.addEventListener('ended', function () {
-              targetVideo.removeEventListener('timeupdate', playevent);
+            targetAsset.addEventListener('ended', function () {
+              targetAsset.removeEventListener('timeupdate', playevent);
               setTimeout(() => {
           
                 $('#cc_breakdown').hide();
@@ -90,4 +91,4 @@
         // handle errors
       });
   });
-})(jQuery, { videoId: 'cancan_video', dataStorageSrc: '/storage/data/cancan_data.json', minDuration: 0, maxDuration: 0 });
+})(jQuery, { doid: 'dwn10lbnz13cb8ec78XXX', dataStorageSrc: '/storage/data/cancan_data.json', minDuration: 0, maxDuration: 0 });

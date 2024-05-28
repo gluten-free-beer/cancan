@@ -7,7 +7,7 @@ const paintCanvas = ({
   vidEl,
   bboxes,
   dimenSize = 400,
-  videoId,
+  doid,
   targetEl = "canvas_area", endmark
 }) => {
   const drawCanvas = function (cwidth, cheight) {
@@ -17,6 +17,7 @@ const paintCanvas = ({
     _CANVAS.height = cheight;
     return _CANVAS;
   };
+  const videoId = `doid_${doid}_video`;
   const vwidth = $(`#${videoId}`)[0].videoWidth;
   const vheight = $(`#${videoId}`)[0].videoHeight;
   const [x1, y1, x2, y2] = bbxs;
