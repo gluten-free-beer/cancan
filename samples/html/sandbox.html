@@ -1,0 +1,74 @@
+<div>
+    <video width="100%" id="target_video" controls>
+        <source src="/assets/videos/sample.mp4" type="video/mp4" />
+        <!--Video by RITRATTO VISUAL: https://www.pexels.com/video/aerial-view-of-crowded-beach-in-rio-de-janeiro-32671215/-->
+    </video>
+</div>
+<script>
+    window.cancan = {
+        strategy: "frame", // alternatives: random
+        element_id: "target_video", // anchor
+        style: "standard",
+        pause: 8,
+    };
+</script>
+<style>
+    .preview-img {
+        height: auto;
+        width: 100%;
+    }
+    .ease-transition {
+        transition: ease-in-out all 1s;
+    }
+    div.cancan-gallery {
+        border-radius: 1rem;
+        background-color: rgb(19, 19, 19);
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        padding: 3rem 2rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 30vw;
+        max-height: 50vh;
+        transition: 0.6s ease-in-out;
+        overflow: auto;
+    }
+
+    .close-anchor {
+        position: absolute;
+        z-index: 99999;
+        right: 10px;
+        top: 10px;
+        width: 18px;
+        height: 18px;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .close-anchor:hover {
+        opacity: 1;
+    }
+
+    .close-anchor:before,
+    .close-anchor:after {
+        position: absolute;
+        left: 5px;
+        content: " ";
+        height: 18px;
+        width: 2px;
+        background-color: rgb(53, 53, 53);
+    }
+
+    .close-anchor:before {
+        transform: rotate(45deg);
+    }
+
+    .close-anchor:after {
+        transform: rotate(-45deg);
+    }
+
+    .close-anchor.light:before,
+    .close-anchor.light:after {
+        background-color: rgb(252, 252, 252);
+    }
+</style>
