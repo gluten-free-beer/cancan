@@ -7,11 +7,11 @@
 <!-- include this setting -->
 <script>
     window.cancan = {
-        strategy: "frame", // alternatives: random
-        element_id: "target_video", // anchor
-        style: "standard",
-        pause: 8, // how many seconds between two presentations
-    };
+        strategy: "time", // options: self (non-sync), time (semi-sync), frame (to fully sync with targets, only applicable to videos) 
+        element_id: 'target_video', // anchor if it has to load with a video give the video element id
+        style: 'standard',
+        pause: 8
+    }
 </script>
 <style>
     .preview-img {

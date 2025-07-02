@@ -1,4 +1,4 @@
-# CanCan client-side scripts
+# CanCan client-side toolbox
 
 - **./samples/scripts/candyLoader.js**
 
