@@ -4,12 +4,13 @@
         <!--Video by RITRATTO VISUAL: https://www.pexels.com/video/aerial-view-of-crowded-beach-in-rio-de-janeiro-32671215/-->
     </video>
 </div>
+<!-- include this setting -->
 <script>
     window.cancan = {
         strategy: "frame", // alternatives: random
         element_id: "target_video", // anchor
         style: "standard",
-        pause: 8,
+        pause: 8, // how many seconds between two presentations
     };
 </script>
 <style>
@@ -17,9 +18,11 @@
         height: auto;
         width: 100%;
     }
+
     .ease-transition {
         transition: ease-in-out all 1s;
     }
+
     div.cancan-gallery {
         border-radius: 1rem;
         background-color: rgb(19, 19, 19);
